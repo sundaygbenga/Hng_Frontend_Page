@@ -42,4 +42,5 @@ const updateTime = () => {
 	time.innerHTML = utcTime;
 };
 
-setInterval(updateTime, 1000);
+// setInterval(updateTime, 1000);
+updateTime();
