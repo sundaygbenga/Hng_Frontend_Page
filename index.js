@@ -5,21 +5,26 @@ const day = document.querySelector('.w-day');
 const time = document.querySelector('.d-time');
 const track = document.querySelector('.track');
 
-slack.innerHTML = `${slackName}`;
+slack.innerHTML = slackName;
+track.innerHTML = stack;
 
 // Date Api
 const now = new Date();
-const option = {
-	hour: 'numeric',
-	minute: 'numeric',
-	// day: 'numeric',
-	// month: 'long', // long, 2-digit,short
-	// year: 'numeric',
-	// weekday: 'long',
-};
+
 const options = {
 	weekday: 'long',
 };
+
+// const option = {
+// 	hour: 'numeric',
+// 	minute: 'numeric',
+// 	second: 'numeric',
+// 	// day: 'numeric',
+// 	// month: 'long', // long, 2-digit,short
+// 	// year: 'numeric',
+// 	// weekday: 'long',
+// };
+
 // getting the locale from user browser
 const locale = navigator.language;
 // console.log(locale);
@@ -27,7 +32,9 @@ const locale = navigator.language;
 const labelDay = new Intl.DateTimeFormat(locale, options).format(now);
 day.innerHTML = `${labelDay} -`;
 
-const labelTime = new Intl.DateTimeFormat(locale, option).format(now);
-time.innerHTML = labelTime;
+// const labelTime = new Intl.DateTimeFormat(locale, option).format(now);
+// time.innerHTML = labelTime;
 
-track.innerHTML = stack;
+// const utcTime = now.getTime();
+const utcTime = Date.now();
+time.innerHTML = utcTime;
