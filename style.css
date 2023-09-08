@@ -127,3 +127,9 @@ img {
 	/* border-top: 1px solid; */
 	padding: 0.5rem 0;
 }
+
+@media (max-width: 560px) {
+	.profile-body {
+		width: 100%;
+	}
+}
