@@ -20,7 +20,7 @@ h3 {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #b70101;
 	font-size: 1.5rem;
 }
 p {
@@ -52,8 +52,17 @@ p {
 }
 
 .bg-primary {
-	background: linear-gradient(to right, #182848, #26d0ce, #1a2980);
+	/* background: linear-gradient(to right, #182848, #26d0ce, #1a2980); */
+	background: #eaeaea;
 	color: #fff;
+}
+.bg-danger {
+	background: linear-gradient(to right, #190a05, #870000);
+	color: #fff;
+}
+.bg-light {
+	background: #fff;
+	color: #000;
 }
 
 .mt-1 {
@@ -72,7 +81,7 @@ p {
 
 img {
 	/* display: flex; */
-	width: 60%;
+	width: 50%;
 	border-radius: 10%;
 	margin: auto;
 }
@@ -83,16 +92,6 @@ img {
 	padding-bottom: 10px;
 }
 
-.profile-head {
-	display: flex;
-	justify-content: center;
-	font-size: 2rem;
-	margin: auto;
-	border: 1px solid;
-	border-top-left-radius: 0.5rem;
-	border-top-right-radius: 0.5rem;
-	width: 80%;
-}
 .profile-body {
 	display: flex;
 	flex-direction: column;
@@ -100,10 +99,9 @@ img {
 	justify-items: center;
 	margin: auto;
 	border: 1px solid;
-	/* border-radius: 0 0.5rem 0 0.5rem; */
-	border-bottom-left-radius: 0.5rem;
-	border-bottom-right-radius: 0.5rem;
-	width: 80%;
+	border-radius: 0.5rem 0.5rem;
+	border-color: #fff;
+	width: 70%;
 }
 
 .t-card {
@@ -111,27 +109,21 @@ img {
 	gap: 0.5rem;
 	justify-content: center;
 	margin: auto;
-	border-top: 1px solid;
-	width: 100%;
 }
 
 .track {
 	display: flex;
 	justify-content: center;
+	margin: auto;
 	border-top: 1px solid;
+	border-width: 5px;
+	width: 70%;
 	padding: 0.5rem 0;
 }
 
 .git-url {
 	display: flex;
 	justify-content: center;
-	border-top: 1px solid;
+	/* border-top: 1px solid; */
 	padding: 0.5rem 0;
-}
-/* Main Footer */
-#main-footer {
-	text-align: center;
-	background: #444;
-	color: #fff;
-	padding: 20px;
 }

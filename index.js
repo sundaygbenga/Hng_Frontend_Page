@@ -1,4 +1,4 @@
-const slackName = 'Sunday Gbenga';
+const slackName = 'Sunfliz';
 const stack = 'Frontend Stack';
 const slack = document.querySelector('.slack-name');
 const day = document.querySelector('.w-day');
@@ -42,5 +42,4 @@ const updateTime = () => {
 	time.innerHTML = utcTime;
 };
 
-// setInterval(updateTime, 1000);
-updateTime();
+setInterval(updateTime, 100);
